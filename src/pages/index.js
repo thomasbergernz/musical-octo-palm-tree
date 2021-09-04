@@ -7,6 +7,7 @@ import { Container, Card, Col, Row, CloseButton } from "react-bootstrap";
 const pageStyles = {
   fontFamily: "Lora, serif",
   marginTop: 100,
+  fontSize: 14,
 }
 
 const docLink = {
@@ -15,20 +16,8 @@ const docLink = {
   color: "#8954A8",
 }
 
-const badgeStyle = {
-  color: "#fff",
-  backgroundColor: "#088413",
-  border: "1px solid #088413",
-  fontSize: 11,
-  fontWeight: "bold",
-  letterSpacing: 1,
-  borderRadius: 4,
-  padding: "4px 6px",
-  display: "inline-block",
-  position: "relative",
-  top: -2,
-  marginLeft: 10,
-  lineHeight: 1,
+const headerStyle = {
+  fontSize: 20,
 }
 
 // data
@@ -85,11 +74,11 @@ const IndexPage = () => {
       <Container fluid="lg">
           <Row>
               <Col lg="4" xs="12">
-                  <Card style={pageStyles}>
-                      <Card.Header>
+                  <Card style={pageStyles} className="bg-light">
+                  <Card.Body>
+                      <Card.Title style={headerStyle} className="bg-light">
                           confluence<span class="text-muted"> | ˈkɒnflʊəns | </span>
-                      </Card.Header>
-                      <Card.Body>
+                      </Card.Title>
                       <p>noun </p>
                         <p>the junction of two rivers, especially rivers of approximately equal width.<strong><em> the confluence of</em></strong><em> the Rivers Ouse and Foss</em>.<em> farther down the Tigris at </em><strong><em>its confluence with</em></strong><em> the Euphrates</em>.
                             </p>
